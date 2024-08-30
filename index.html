@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          &#9776;
+        </div>
+        <ul class="navigation" id="nav-links">
+          <div class="close-icon" onclick="closeMenu()">
+            &times;
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+        
+
+    <div class="sub-navigation">
+        <ul>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">View</a></li>
+            <li><a href="#">Profit</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="courses">
+            <div class="course-box html">
+                <i class="fa fa-code"></i>
+                <h3>HTML</h3>
+                <p>Learn the basics of HTML.</p>
+                <a href="html-course.html" class="btn">Start Learning</a>
+            </div>
+            <div class="course-box css">
+                <i class="fa fa-paint-brush"></i>
+                <h3>CSS</h3>
+                <p>Style your web pages with CSS.</p>
+                <a href="css-course.html" class="btn">Start Learning</a>
+            </div>
+            <div class="course-box javascript">
+                <i class="fa fa-js-square"></i>
+                <h3>JavaScript</h3>
+                <p>Add interactivity with JavaScript.</p>
+                <a href="javascript-course.html" class="btn">Start Learning</a>
+            </div>
+            <div class="course-box php">
+                <i class="fa fa-server"></i>
+                <h3>PHP</h3>
+                <p>Develop dynamic websites with PHP.</p>
+                <a href="php-course.html" class="btn">Start Learning</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 dpmacademy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
