@@ -6,12 +6,8 @@
   --secondary-color: #d0d0d3;
   --highlight-color: chartreuse;
   --txt-color: black;
-
   --text-color: rgb(246, 244, 244);
-  --button-bg: #ff0000;
-  --button-bg-hover: #cc0000;
   --section-bg-color: #f4f4f9;
-  
 }
 
 body {
@@ -43,12 +39,22 @@ nav {
   display: block;
 }
 
+.menu-container{
+  display: flex;
+}
+
 .menu-icon,
 .close-icon {
-  font-size: 24px;
-  cursor: pointer;
   display: none;
   color: var(--section-bg-color);
+  padding: 8px 16px;
+  background-color: var(--highlight-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  align-items: center;
 }
 
 .navigation {
@@ -67,57 +73,19 @@ nav {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  padding: 10px; 
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+.navigation li a i {
+  display: none;
+}
 }
 
 .navigation a:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  border-radius: 5px; 
-}
-
-.about-dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
-
-  .logo {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .navigation {
-    display: none;
-    flex-direction: column;
-    background-color: rgb(219, 140, 153);
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    gap: 15px;
-  }
-  
-  .navigation.show {
-    display: flex;
-  }
-
-  .navigation li {
-    display: block;
-    text-align: center;
-  }
-
-  .close-icon {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
+  border-radius: 5px;
 }
 
 .sub-navigation {
@@ -144,6 +112,10 @@ nav {
   text-decoration: none;
   padding: 8px 16px;
   display: inline-block;
+}
+
+.sub-navigation a:hover {
+  background-color: #ff9800;
 }
 
 .courses {
@@ -193,7 +165,83 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive adjustments */
+/* Toggle Button Styles */
+.toggle-button {
+  padding: 8px 16px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-button:hover {
+  background-color: #e68900;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(219, 140, 153);
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    gap: 15px;
+  }
+
+  .navigation.show {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+    text-align: center;
+  }
+
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .toggle-button {
+    font-size: 14px;
+  }
+
+  .social-media-container {
+    max-width: 600px;
+    gap: 5px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamburger, .toggle-button {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
 @media (max-width: 1200px) {
   .course-box {
     width: calc(50.33% - 40px); /* 3 items in a row */
@@ -228,6 +276,44 @@ nav {
   }
 }
 
+/* Dark mode styles */
+.dark-mode {
+  background-color: #222;
+  color: #ffffffb0;
+}
+
+.dark-mode .navigation a {
+  color: #ffffff;
+}
+
+.dark-mode .navigation a:hover {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.dark-mode .course-box {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .course-box .btn {
+  background-color: var(--highlight-color);
+}
+
+.dark-mode footer {
+  background-color: #000;
+}
+
+.dark-mode .social-icon {
+  background-color: #333;
+}
+
+.dark-mode .social-icon i {
+  color: #fff;
+}
+
+
+/* ====================footer and social icons====================== */
 footer {
   background-color: #333;
   color: #fff;
@@ -237,45 +323,6 @@ footer {
   width: 100%;
   bottom: 0;
 }
-
-@media (max-width: 768px) {
-  .navbar ul {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 100%;
-  }
-
-  .navbar ul.active {
-    display: flex;
-  }
-
-  .navbar ul li {
-    margin: 10px 0;
-  }
-
-  .menu-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 120px;
-  }
-
-  .logo img {
-    max-width: 50px;
-    border-radius: 50%;
-  }
-
-  .courses {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-
 
 /* style za social icons */
 .social-media-container {
