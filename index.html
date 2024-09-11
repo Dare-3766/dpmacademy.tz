@@ -6,6 +6,13 @@
     <title>Online Learning Platform</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- translation script -->
+    <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+    <script>
+        Weglot.initialize({
+            api_key: 'wg_1b8c373165aaa3cc75a91a310ad195f98'
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -32,8 +39,8 @@
         <ul>
             <li><a href="#">Project</a></li>
             <li><a href="#">Data</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">View</a></li>
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Machine Learning</a></li>
             <li><a href="#">Profit</a></li>
         </ul>
     </div>
@@ -41,36 +48,64 @@
     <main>
         <section class="courses">
             <div class="course-box html">
-                <i class="fa fa-code"></i>
-                <h3>HTML</h3>
-                <p>Learn the basics of HTML.</p>
-                <a href="html-course.html" class="btn">Start Learning</a>
+                <i class="fa fa-database" style="color: #f39c12;"></i>
+                <h3>Data Science</h3>
+                <p>Learn the basics of Data Analysis.</p>
+                <a href="dataanalysis.html" class="btn">Start Learning</a>
             </div>
             <div class="course-box css">
-                <i class="fa fa-paint-brush"></i>
-                <h3>CSS</h3>
-                <p>Style your web pages with CSS.</p>
+                <i class="fa fa-brain" style="color: #3498db;"></i>
+                <h3>Artificial Intelligence & Machine Learning</h3>
+                <p>no content</p>
                 <a href="css-course.html" class="btn">Start Learning</a>
             </div>
             <div class="course-box javascript">
-                <i class="fa fa-js-square"></i>
-                <h3>JavaScript</h3>
-                <p>Add interactivity with JavaScript.</p>
+                <i class="fa fa-code" style="color: #f1c40f;"></i>
+                <h3>Programming Languages</h3>
+                <p>no content right now</p>
                 <a href="javascript-course.html" class="btn">Start Learning</a>
             </div>
             <div class="course-box php">
-                <i class="fa fa-server"></i>
-                <h3>PHP</h3>
-                <p>Develop dynamic websites with PHP.</p>
+                <i class="fa fa-globe" style="color: #e74c3c;"></i>
+                <h3>Web Development</h3>
+                <p>not available.</p>
                 <a href="php-course.html" class="btn">Start Learning</a>
             </div>
         </section>
+
+         <!-- Google Translate Element -->
+    <div id="google_translate_element"></div>
+
     </main>
+    
 
     <footer>
+        <div class="social-media-container">
+            <a href="https://www.youtube.com/@davidmwita5556" class="social-icon youtube" target="_blank" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/david-mwita-33564b2ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon linkedin" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/+255745360418" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://x.com/mwita76008?t=yc1INkYzHPwwR-XFAjI3Qg&s=08" class="social-icon twitter" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555701837002" class="social-icon facebook" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/dpm.tz?utm_source=qr&igsh=MW5ucGVybzRtNnkzNA==" class="social-icon instagram" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    
         <p>&copy; 2024 dpmacademy. All rights reserved.</p>
     </footer>
 
+        <!-- FontAwesome Icons CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
