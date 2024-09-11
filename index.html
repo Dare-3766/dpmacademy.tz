@@ -6,7 +6,6 @@
     <title>Online Learning Platform</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- translation script -->
     <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
     <script>
         Weglot.initialize({
@@ -14,27 +13,29 @@
         });
     </script>
 </head>
-<body>
+<body class="light-mode">
     <nav>
         <div class="logo">
             <img src="images/logo.png" alt="Logo">
         </div>
-        <div class="menu-icon" onclick="toggleMenu()">
-          &#9776;
+        <div class="menu-container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="navigation" id="nav-links">
+                <div class="close-icon" onclick="closeMenu()">
+                    &times;
+                </div>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i>About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+            </ul>
+             <div class="toggle-button" id="toggleMode">
+                <i class="fas fa-sun"></i>
+            </div>
         </div>
-        <ul class="navigation" id="nav-links">
-          <div class="close-icon" onclick="closeMenu()">
-            &times;
-          </div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-        
-
+    </nav>
     <div class="sub-navigation">
         <ul>
             <li><a href="#">Project</a></li>
@@ -44,7 +45,6 @@
             <li><a href="#">Profit</a></li>
         </ul>
     </div>
-
     <main>
         <section class="courses">
             <div class="course-box html">
@@ -56,29 +56,25 @@
             <div class="course-box css">
                 <i class="fa fa-brain" style="color: #3498db;"></i>
                 <h3>Artificial Intelligence & Machine Learning</h3>
-                <p>no content</p>
+                <p>No content</p>
                 <a href="css-course.html" class="btn">Start Learning</a>
             </div>
             <div class="course-box javascript">
                 <i class="fa fa-code" style="color: #f1c40f;"></i>
                 <h3>Programming Languages</h3>
-                <p>no content right now</p>
+                <p>No content right now</p>
                 <a href="javascript-course.html" class="btn">Start Learning</a>
             </div>
             <div class="course-box php">
                 <i class="fa fa-globe" style="color: #e74c3c;"></i>
                 <h3>Web Development</h3>
-                <p>not available.</p>
+                <p>Not available.</p>
                 <a href="php-course.html" class="btn">Start Learning</a>
             </div>
         </section>
-
-         <!-- Google Translate Element -->
-    <div id="google_translate_element"></div>
-
+        <!-- Google Translate Element -->
+        <div id="google_translate_element"></div>
     </main>
-    
-
     <footer>
         <div class="social-media-container">
             <a href="https://www.youtube.com/@davidmwita5556" class="social-icon youtube" target="_blank" title="YouTube">
@@ -100,12 +96,8 @@
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
-    
         <p>&copy; 2024 dpmacademy. All rights reserved.</p>
     </footer>
-
-        <!-- FontAwesome Icons CDN -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
